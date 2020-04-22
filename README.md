@@ -8,11 +8,11 @@
 
 ## Clone the repository
 
-\> git clone git@github.com:a5g/cypress-cytask-example.git
+\> git clone git@github.com:a5g/cypress-cy.task-example.git
 
-## Switch to `cypress-cytask-example` folder
+## Switch to `cypress-cy.task-example` folder
 
-\> cd cypress-cytask-example
+\> cd cypress-cy.task-example
 
 ### Install required node_modules
 

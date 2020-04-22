@@ -1,5 +1,5 @@
 {
-  "name": "cypress-cytask-example",
+  "name": "cypress-cy.task-example",
   "version": "1.0.0",
   "description": "An example to show usage of cypress task via plugins",
   "repository": {
