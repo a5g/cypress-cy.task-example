@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Target directories
+target/
+
+# Reports directories
+mochawesome-report/
+allure-report/
+allure-results/
+cypress/screenshots/
+
+# mac ds_store file
+.DS_Store
+
+# logs
+logs/
+*.log

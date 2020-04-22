@@ -1,0 +1,53 @@
+{
+  "name": "cypress-cytask-example",
+  "version": "1.0.0",
+  "description": "An example to show usage of cypress task via plugins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reflektion/rfk-mcc-tests.git"
+  },
+  "author": "Anand Ganesh",
+  "license": "ISC",
+  "private": false,
+  "scripts": {
+    "start": "echo",
+    "test": "npx cypress run --spec cypress/integration/demo.spec.js",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "open": "./node_modules/.bin/cypress open",
+    "report": "allure generate target/allure-results --clean -o target/allure-report && allure open target/allure-report"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.8.1",
+    "allure-js-commons": "^2.0.0-beta.3",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.2",
+    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "6.26.0",
+    "chai": "^4.1.2",
+    "cypress": "^3.1.5",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-import-resolver-babel-module": "^3.0.0",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "7.1.0",
+    "mocha": "^5.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-junit-reporter": "^1.18.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^3.0.2",
+    "mochawesome-report-generator": "^3.1.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "presets": ["es2015", "react", "stage-3"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./public/src"],
+        "alias": {
+          "components": "./public/src/components",
+          "layouts": "./public/src/layouts",
+          "pages": "./public/src/pages",
+          "portal/util": "./public/src/util",
+          "store": "./public/src/store",
+          "forms": "./public/src/forms",
+          "dialogs": "./public/src/dialogs",
+          "app": "./public/src/app",
+          "widgets": "./public/src/widgets",
+          "api": "./api"
+        }
+      }
+    ],
+    "transform-runtime",
+    "transform-decorators-legacy",
+    "transform-react-display-name",
+    "transform-react-remove-prop-types",
+    "transform-react-constant-elements",
+    "transform-react-inline-elements",
+    "react-hot-loader/babel"
+  ],
+  "env": {
+    "test": {
+      "plugins": ["rewire-exports"]
+    }
+  }
+}

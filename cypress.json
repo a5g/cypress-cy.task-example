@@ -1,0 +1,11 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 15000,
+  "watchForFileChanges": false,
+  "reporter": "mocha-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reports-config.json"
+  },
+  "video": false,
+  "screenshotOnRunFailure": false
+}

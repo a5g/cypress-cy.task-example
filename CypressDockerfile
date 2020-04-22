@@ -1,0 +1,17 @@
+FROM cypress/browsers:chrome63-ff57
+WORKDIR /opt/reflektion/portal-cypress
+ENV npm_config_loglevel=warn
+
+COPY ./public/src/config /opt/reflektion/portal-cypress/public/src/config
+COPY ./cypress /opt/reflektion/portal-cypress/cypress
+COPY ./cypress.json /opt/reflektion/portal-cypress/cypress.json
+
+#TODO, once we have more pkg, so should use a package.json file
+RUN npm install cypress
+RUN $(npm bin)/cypress verify
+RUN npm install fontawesome
+
+ENV CYPRESS_BASE_URL=http://portal.dev.rfksrv.com
+
+RUN $(npm bin)/cypress run -s cypress/integration/e2e/preview-search/rules.js -b chrome
+RUN $(npm bin)/cypress run -s cypress/integration/e2e/search-results/rules.js -b chrome

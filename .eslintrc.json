@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb",
+  "plugins": ["import"],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "rules": {
+    "global-require": 0,
+    "no-script-url": 0,
+    "spaced-comment": 1,
+    "no-plusplus": [
+      2,
+      {
+        "allowForLoopAfterthoughts": true,
+        "allowNamedFunctions": true
+      }
+    ],
+    "import/prefer-default-export": 0
+  }
+}
