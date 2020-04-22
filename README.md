@@ -41,6 +41,4 @@ To view logs <br />
 \> open logs/info.log <br />
 \> open logs/error.log
 
-## Demo
-
-link_to_video
+[Demo](https://drive.google.com/file/d/1jnxO2fbx5bpE0Bc6eQIKUi6TDTC1Ca4w/view?usp=sharing)
